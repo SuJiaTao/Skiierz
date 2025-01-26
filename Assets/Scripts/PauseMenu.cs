@@ -40,8 +40,8 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         Debug.Log("Loading menu...");
-        //Time.timeScale = 1f;
-        //SceneManager.LoadScene("Menu");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
         //uncomment above to sync with a main menu
     }
 

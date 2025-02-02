@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 
@@ -12,6 +13,10 @@ public class MainMenuController : MonoBehaviour
     {
         Application.Quit(); 
         Debug.Log("Game is exiting");
+    }
+
+    public void LoadLevelSelect() {
+        Debug.Log("level select pressed");
     }
 }
 

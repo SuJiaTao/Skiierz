@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
+    public Camera mainCamera;
+    public Animator cameraAnimator;
     public void StartGame()
     {
         SceneManager.LoadScene("SlopeTestsA"); // Replace with actual scene name
@@ -17,6 +19,13 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadLevelSelect() {
         Debug.Log("level select pressed");
+        playAnimation();
+    }
+
+    public void playAnimation() {
+        mainCamera = Camera.main;
+        cameraAnimator.SetTrigger("StartAnimation");
+        Debug.Log("animation should play");
     }
 }
 

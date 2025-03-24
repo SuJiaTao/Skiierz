@@ -10,7 +10,8 @@ public class CameraManager : MonoBehaviour
     public float dampening = 1f;
     public Vector3 rotation;
 
-    private void Start() {
+    private void Start()
+    {
         player = GameObject.FindWithTag("CamTrackingTarget").transform;
     }
 
@@ -18,8 +19,8 @@ public class CameraManager : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = Vector3.Lerp(
-            transform.position, 
-            player.position + (Quaternion.Euler(rotation) * player.TransformDirection(new Vector3(0, cameraHeight, -cameraDistance))), 
+            transform.position,
+            player.position + (Quaternion.Euler(rotation) * player.TransformDirection(new Vector3(0, cameraHeight, -cameraDistance))),
             dampening * Time.deltaTime);
         transform.LookAt(player);
     }

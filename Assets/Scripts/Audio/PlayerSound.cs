@@ -97,7 +97,7 @@ public class PlayerSound : MonoBehaviour
     }
     public void ClearSounds()
     {
-        UpdateSkiingSoundIntensity(0);
-        ToggleSnowKickSound(false);
+        skiingSound.stop(STOP_MODE.ALLOWFADEOUT);
+        snowKickSound.stop(STOP_MODE.ALLOWFADEOUT);
     }
 }

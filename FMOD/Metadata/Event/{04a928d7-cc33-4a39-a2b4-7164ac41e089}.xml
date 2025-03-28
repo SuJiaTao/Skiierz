@@ -118,7 +118,7 @@ https://www.fmod.com/docs/studio/authoring-events.html#automation-and-modulation
 	</object>
 	<object class="EventMixerMaster" id="{d88fbfa0-f6f7-4b2d-b0d2-3297fb2fa719}">
 		<property name="volume">
-			<value>-24.5</value>
+			<value>3.5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{939a2936-db57-41b7-827d-70fad02b4be9}</destination>
@@ -271,7 +271,7 @@ https://www.fmod.com/docs/studio/authoring-events.html#automation-and-modulation
 			<value>2.5423728813559321</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>10</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{ac6c5698-a46e-44ba-a0c1-7a5bdd81ee6c}">
@@ -279,7 +279,7 @@ https://www.fmod.com/docs/studio/authoring-events.html#automation-and-modulation
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-80</value>
+			<value>0</value>
 		</property>
 		<property name="curveShape">
 			<value>-0.304672807</value>

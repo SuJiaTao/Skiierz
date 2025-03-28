@@ -143,7 +143,7 @@ Rain recordings provided by Xue Qiao of BB Studio, Chongqing Qiaoya Music and Cu
 	</object>
 	<object class="EventMixerMaster" id="{ebfaca3c-6c62-4fbb-a08d-7345aecfcfc4}">
 		<property name="volume">
-			<value>-18.5</value>
+			<value>5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{a79f98ba-cc8b-4451-b959-b90672ce775e}</destination>

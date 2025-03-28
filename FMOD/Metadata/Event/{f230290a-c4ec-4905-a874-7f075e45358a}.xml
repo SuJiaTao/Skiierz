@@ -127,7 +127,7 @@ https://www.fmod.com/docs/studio/authoring-events.html#automation-and-modulation
 	</object>
 	<object class="EventMixerMaster" id="{f534253c-fb3d-4ed2-9fc6-78e3d703e761}">
 		<property name="volume">
-			<value>-6</value>
+			<value>5.5</value>
 		</property>
 		<relationship name="automators">
 			<destination>{8f43ee58-df69-4e05-abe3-d3dbd2561862}</destination>

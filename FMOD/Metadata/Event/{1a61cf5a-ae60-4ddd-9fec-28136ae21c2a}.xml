@@ -129,7 +129,7 @@ Recordings by David Nichols of Track Time Audio. Engine is a 1988 Craftsman II 1
 	</object>
 	<object class="EventMixerMaster" id="{6cb9af95-21c0-40ae-8353-15546c6004ac}">
 		<property name="volume">
-			<value>-16.5</value>
+			<value>-5.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{a237ef80-1624-451e-bad2-9ebce4e840db}</destination>

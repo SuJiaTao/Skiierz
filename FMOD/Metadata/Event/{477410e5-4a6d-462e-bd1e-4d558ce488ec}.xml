@@ -249,7 +249,7 @@ Rain recordings provided by Xue Qiao of BB Studio, Chongqing Qiaoya Music and Cu
 	</object>
 	<object class="EventMixerMaster" id="{77d4d62b-136c-4600-b647-d25bda527f38}">
 		<property name="volume">
-			<value>-18.5</value>
+			<value>-10</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{c0f6ee04-a781-403e-9db2-2d63fe5409f5}</destination>
@@ -1271,7 +1271,7 @@ Rain recordings provided by Xue Qiao of BB Studio, Chongqing Qiaoya Music and Cu
 			<value>0.45281456796539993</value>
 		</property>
 		<property name="value">
-			<value>1.25265884</value>
+			<value>10</value>
 		</property>
 		<property name="curveShape">
 			<value>1</value>
@@ -1282,7 +1282,7 @@ Rain recordings provided by Xue Qiao of BB Studio, Chongqing Qiaoya Music and Cu
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-71.648941</value>
+			<value>9.99930573</value>
 		</property>
 		<property name="curveShape">
 			<value>-1</value>
@@ -1293,7 +1293,7 @@ Rain recordings provided by Xue Qiao of BB Studio, Chongqing Qiaoya Music and Cu
 			<value>0.60264900662251653</value>
 		</property>
 		<property name="value">
-			<value>-16.7473412</value>
+			<value>10</value>
 		</property>
 	</object>
 	<object class="Automator" id="{f70ebeec-8ecf-4864-9906-7f38ab4a6c19}">

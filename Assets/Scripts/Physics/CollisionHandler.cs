@@ -119,14 +119,14 @@ public class CollisionHandler : MonoBehaviour
             playerSound.ClearSounds();
             playerSound.enabled = false;
 
-            //fade panel
-            fadeMyPanel();
+            //fade image
+            fadeMyImage();
 
             hasDismounted = true;
         }
     }
 
-    void fadeMyPanel() {
+    void fadeMyImage() {
         StartCoroutine(FadeCoroutine());
     }
 
@@ -134,7 +134,6 @@ public class CollisionHandler : MonoBehaviour
         Color startColor = fadeImage.color;
         float elapsedTime = 0f;
         float fadeDuration = 5f;
-        //yield return new WaitForSeconds(3f);
 
         while (elapsedTime < fadeDuration) {
             elapsedTime += Time.deltaTime;

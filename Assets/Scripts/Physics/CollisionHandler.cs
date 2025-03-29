@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class CollisionHandler : MonoBehaviour
     public Vector3 lastSpawnPoint;
     public Quaternion lastSpawnRotation;
     public Trail playerTrail;
+
+    public Image fadeImage;
 
     private void Awake() {
         lastSpawnPoint = transform.position;
@@ -116,7 +119,30 @@ public class CollisionHandler : MonoBehaviour
             playerSound.ClearSounds();
             playerSound.enabled = false;
 
+            //fade panel
+            fadeMyPanel();
+
             hasDismounted = true;
         }
+    }
+
+    void fadeMyPanel() {
+        StartCoroutine(FadeCoroutine());
+    }
+
+    IEnumerator FadeCoroutine() {
+        Color startColor = fadeImage.color;
+        float elapsedTime = 0f;
+        float fadeDuration = 5f;
+        //yield return new WaitForSeconds(3f);
+
+        while (elapsedTime < fadeDuration) {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, elapsedTime / fadeDuration);
+            fadeImage.color = new Color(startColor.r, startColor.g, startColor.b, alpha);
+            yield return null;
+        }
+
+        fadeImage.color = new Color(startColor.r, startColor.g, startColor.b, 0);
     }
 }
